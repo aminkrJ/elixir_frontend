@@ -2,7 +2,8 @@
   "name": "elixir_frontend",
   "version": "0.0.1",
   "scripts": {
-    "start": "webpack"
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
   },
   "dependencies": {
     "babel-loader": "^6.2.4",
