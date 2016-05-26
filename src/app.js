@@ -1,3 +1,3 @@
-require('./js/index.jsx');
+require('./js/sample.jsx');
 
 require('./css/style.css');
