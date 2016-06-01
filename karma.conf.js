@@ -7,10 +7,11 @@ module.exports = function (config) {
     files: [
       'spec.bundle.js'
     ],
-    frameworks: [ 'chai', 'mocha' ],
+    frameworks: [ 'jasmine' ],
     plugins: [
       'karma-chrome-launcher',
       'karma-chai',
+      'karma-jasmine',
       'karma-mocha',
       'karma-sourcemap-loader',
       'karma-webpack',
