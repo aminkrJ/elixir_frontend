@@ -4,7 +4,6 @@ webpackConfig.devtool = 'inline-source-map';
 module.exports = function (config) {
   config.set({
     browsers: [ 'Chrome' ],
-    // karma only needs to know about the test bundle
     files: [
       'spec.bundle.js'
     ],
@@ -16,13 +15,11 @@ module.exports = function (config) {
       'karma-sourcemap-loader',
       'karma-webpack',
     ],
-    // run the bundle through the webpack and sourcemap plugins
     preprocessors: {
       'spec.bundle.js': [ 'webpack', 'sourcemap' ]
     },
     reporters: [ 'dots' ],
     singleRun: true,
-    // webpack config object
     webpack: webpackConfig,
     webpackMiddleware: {
       noInfo: true,
