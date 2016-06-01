@@ -1,13 +1,10 @@
 'use strict';
 
 module.exports = {
-  entry: {
-    'app.bundle': './app/entry.js',
-    'spec.bundle': './spec/entry.js'
-  },
+  entry: './app/entry.js',
   output: {
     path: './bin',
-    filename: '[name].js'
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
