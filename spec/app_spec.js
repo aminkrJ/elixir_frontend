@@ -1,8 +1,10 @@
 import React from 'react';
 import { expect } from 'chai';
+import App from '../app/js/app';
+import TestUtils from 'react/lib/ReactTestUtils';
 
-describe('app', function () {
-  it('renders without problems', function () {
-    expect([1,2]).to.contain(1);
+describe('App', () => {
+  it('renders without problems', () => {
+    TestUtils.renderIntoDocument(<App />);
   });
 });
