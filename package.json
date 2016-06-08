@@ -6,8 +6,7 @@
     "dev": "webpack -d --watch",
     "build": "webpack -p"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.9.0",
@@ -33,6 +32,8 @@
     "react-dom": "^15.1.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
+    "underscore": "^1.8.3",
     "webpack": "^1.13.1"
-  }
+  },
+  "devDependencies": {}
 }

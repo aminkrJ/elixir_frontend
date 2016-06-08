@@ -1,10 +1,10 @@
 import React from 'react';
 import { expect } from 'chai';
-import App from '../app/js/app';
+import RecipeFilter from '../app/js/recipe_filter';
 import TestUtils from 'react/lib/ReactTestUtils';
 
-describe('App', () => {
+describe('RecipeFilter', () => {
   it('renders without problems', () => {
-    TestUtils.renderIntoDocument(<App />);
+    TestUtils.renderIntoDocument(<RecipeFilter />);
   });
 });
