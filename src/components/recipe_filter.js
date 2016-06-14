@@ -4,10 +4,11 @@ import Ingredients from './ingredients';
 import Recipes from './recipes';
 import Recipe from './recipe';
 import $ from 'jquery';
+import _ from 'underscore';
 
 export default class RecipeFilter extends React.Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.ingredientIds = [];
     this.state = {
       ingredients: [],
@@ -67,7 +68,7 @@ export default class RecipeFilter extends React.Component {
       <div className="recipeFilter">
         <Ingredients
           data={this.state.ingredients}
-          onIngredientClick={this.handleIngredientClick}
+          onIngredientClick={this.handleIngredientClick.bind(this)}
         />
         <Recipes
           data={this.state.recipes}

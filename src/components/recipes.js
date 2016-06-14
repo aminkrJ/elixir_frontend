@@ -1,7 +1,12 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Recipe from './recipe';
 
 export default class Recipes extends React.Component {
+  constructor(props){
+    super(props);
+  }
+
   render(){
     var recipeNodes = this.props.data.map(function(data){
       return(

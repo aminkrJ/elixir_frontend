@@ -9,4 +9,5 @@ import Recipe from './components/recipe';
 
 require('./styles/style.scss');
 
-render(<RecipeFilter/>, document.getElementById('app'));
+render(<RecipeFilter ingredients_path="https://elixir-prod.herokuapp.com/ingredients.json"
+                     recipes_path="https://elixir-prod.herokuapp.com/recipes.json" />, document.getElementById('app'));

@@ -1,9 +1,10 @@
 import React from 'react';
 import {render} from 'react-dom';
+import classNames from 'classnames';
 
-class Ingredient extends React.Component {
-  constructor(){
-    super();
+export default class Ingredient extends React.Component {
+  constructor(props){
+    super(props);
     this.state = {
       clicked: false
     };
@@ -18,7 +19,7 @@ class Ingredient extends React.Component {
     return(
       <div
         className={classNames("ingredient", {'clicked': this.state.clicked})}
-        onClick={this.onClick}>
+        onClick={this.onClick.bind(this)}>
           {this.props.data.name.toLowerCase()}
       </div>
     );

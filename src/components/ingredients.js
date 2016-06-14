@@ -1,9 +1,10 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Ingredient from './ingredient';
 
 export default class Ingredients extends React.Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
   }
 
   render(){
