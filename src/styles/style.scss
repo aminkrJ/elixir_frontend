@@ -1,3 +1,14 @@
-body{
-  background-color: #ddd
+.clickable{
+  cursor: pointer;
+  &.clicked{
+    text-decoration: underline;
+  }
+}
+
+.recipe{
+  @extend .clickable;
+}
+
+.ingredient{
+  @extend .clickable;
 }

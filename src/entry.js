@@ -7,6 +7,8 @@ import Ingredients from './components/ingredients';
 import Recipes from './components/recipes';
 import Recipe from './components/recipe';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 require('./styles/style.scss');
 
 render(<RecipeFilter ingredients_path="https://elixir-prod.herokuapp.com/ingredients.json"
