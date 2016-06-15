@@ -8,6 +8,7 @@ import Recipes from './components/recipes';
 import Recipe from './components/recipe';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-nprogress/nprogress.css';
 
 require('./styles/style.scss');
 

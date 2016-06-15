@@ -5,6 +5,7 @@ import Recipes from './recipes';
 import Recipe from './recipe';
 import $ from 'jquery';
 import _ from 'underscore';
+import NProgress from 'react-nprogress';
 
 export default class RecipeFilter extends React.Component {
   constructor(props){
@@ -34,7 +35,11 @@ export default class RecipeFilter extends React.Component {
       dataType: 'json',
       type: 'GET',
       cache: false,
+      beforeSend: function(){
+        NProgress.start();
+      },
       success: function(data){
+        NProgress.done();
         this.setState({ ingredients: data });
       }.bind(this),
       error: function(xhr, status, err){
