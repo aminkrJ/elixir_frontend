@@ -82,5 +82,9 @@ export default class RecipeFilter extends React.Component {
       </div>
     );
   }
+};
 
-}
+RecipeFilter.defaultProps = {
+  ingredients_path: "https://elixir-prod.herokuapp.com/ingredients.json",
+  recipes_path: "https://elixir-prod.herokuapp.com/recipes.json"
+};
