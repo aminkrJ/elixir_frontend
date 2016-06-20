@@ -11,10 +11,24 @@ export default class App extends React.Component {
   render(){
     return(
       <div>
-        <ul>
-          <li><Link to="subscribe">subscribe</Link></li>
-          <li><Link to="halo">halo</Link></li>
-        </ul>
+        <nav className="navbar navbar-default navbar-static-top">
+          <div className="container-fluid">
+            <div className="collapse navbar-collapse">
+              <ul className="nav navbar-nav">
+                <li className="active"><Link to="home">home</Link></li>
+                <li><Link to="home">why us?</Link></li>
+                <li><Link to="home">contact</Link></li>
+              </ul>
+              <ul className="nav navbar-nav navbar-right">
+                <li>
+                  <Link to="subscribe" className="button">
+                    <button className="btn btn-primary navbar-btn">subscribe</button>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         {this.props.children}
       </div>
     );

@@ -19,7 +19,7 @@ render((
   <Router history={browserHistory}>
     <Route path="/" component={Layout}>
       <IndexRoute component={RecipeFilter}/>
-      <Route path="halo" component={RecipeFilter}/>
+      <Route path="home" component={RecipeFilter}/>
       <Route path="subscribe" component={Subscribe}/>
     </Route>
   </Router>

@@ -1,6 +1,15 @@
 body{
-  padding: 1em;
 }
+
+.navbar-nav{
+  li{
+    a.button{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
 .clickable{
   cursor: pointer;
   &.clicked{
